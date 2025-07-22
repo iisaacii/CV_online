@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CV Isaac M. García</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Montserrat:700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #f7f9fb;
+      font-family: 'Roboto', sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 850px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+      padding: 40px 50px 40px 50px;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid #e5e5e5;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+    }
+    .profile-pic {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #5b8def;
+      margin-right: 24px;
+      background: #e8eaf6;
+    }
+    .title-block {
+      flex: 1;
+    }
+    .name {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.1em;
+      color: #243f77;
+      margin: 0 0 6px 0;
+      letter-spacing: 1px;
+    }
+    .role {
+      font-size: 1.18em;
+      color: #5b8def;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .contact-info, .info-row {
+      font-size: 1em;
+      color: #6b7a89;
+      margin-bottom: 6px;
+    }
+    .section-title {
+      font-family: 'Montserrat', sans-serif;
+      color: #243f77;
+      font-size: 1.35em;
+      margin-top: 40px;
+      margin-bottom: 16px;
+      border-left: 5px solid #5b8def;
+      padding-left: 11px;
+      letter-spacing: 1px;
+    }
+    .skills-list, .cert-table {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+    .skills-list li {
+      display: inline-block;
+      background: #e3edf8;
+      border-radius: 18px;
+      color: #496999;
+      padding: 7px 16px;
+      margin: 0 10px 8px 0;
+      font-size: 0.97em;
+    }
+    .content-block {
+      margin-bottom: 22px;
+    }
+    .cert-table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    .cert-table th, .cert-table td {
+      border-bottom: 1px solid #e5e5e5;
+      padding: 8px 12px;
+      text-align: left;
+    }
+    .cert-table th {
+      background: #e3edf8;
+      color: #243f77;
+    }
+    .lang-bar {
+      background: #d3e5fa;
+      border-radius: 8px;
+      margin-bottom: 6px;
+      overflow: hidden;
+    }
+    .lang-bar span {
+      display: block;
+      height: 11px;
+      background: #5b8def;
+    }
+    @media (max-width: 680px) {
+      .container { padding: 20px; }
+      .header { flex-direction: column; align-items: flex-start; }
+      .profile-pic { margin-bottom: 15px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="isaactraje.jpg" alt="Foto de perfil" class="profile-pic">
+      <div class="title-block">
+        <div class="name">Isaac M. García</div>
+        <div class="role">Especialista en Python para IA & Microservicios en Java</div>
+        <div class="contact-info">
+          <span>isaac.martinezg@ingenieria.unam.edu</span> &bull; 
+          <span>LinkedIn: /isaac-martinez-garcia-3a8aa2230</span><br>
+          <span>Estado de México, México</span> &bull; 
+          <span>Tel: (56) 23666377</span>
+        </div>
+        <div class="info-row">Licencia profesional: 14794374</div>
+      </div>
+    </div>
+    
+    <div class="content-block">
+      <div class="section-title">Perfil Profesional</div>
+      Ingeniero en sistemas con énfasis en <strong>Python para inteligencia artificial</strong> (modelos predictivos, clasificación, series temporales, redes neuronales) y desarrollo de <strong>microservicios escalables en Java</strong>.
+      Experiencia en minería de datos, automatización de procesos, optimización de pipelines de IA y despliegue de modelos en entornos productivos. Capacidad para traducir requerimientos complejos en soluciones tecnológicas innovadoras y eficientes.
+    </div>
+
+    <div class="content-block">
+      <div class="section-title">Competencias Técnicas</div>
+      <ul class="skills-list">
+        <li>Python (TensorFlow, Keras, Pandas, scikit-learn)</li>
+        <li>Redes neuronales DNN / LSTM / RNN</li>
+        <li>Series temporales & Forecasting</li>
+        <li>Minería y limpieza de datos</li>
+        <li>Clasificación y regresión</li>
+        <li>Optimización de código y procesos</li>
+        <li>Visualización avanzada de datos</li>
+        <li>Java (Spring Boot, Maven)</li>
+        <li>Microservicios RESTful</li>
+        <li>Despliegue en Docker / CI-CD</li>
+        <li>SQL / Firebase / MongoDB</li>
+        <li>Git, Linux, Azure</li>
+      </ul>
+    </div>
+
+    <div class="content-block">
+      <div class="section-title">Experiencia Relevante</div>
+      <ul>
+        <li>Modelado y despliegue de <strong>redes neuronales profundas</strong> para detectar patrones y tendencias en grandes volúmenes de datos (finanzas, mercado).</li>
+        <li>Implementación de <strong>modelos predictivos de series temporales</strong> y clasificación automática para toma de decisiones en tiempo real.</li>
+        <li>Minería de datos y automatización de pipelines de integración para proyectos de ciencia de datos.</li>
+        <li>Desarrollo y optimización de <strong>microservicios en Java</strong> para plataformas seguras, modulares y de alta disponibilidad.</li>
+        <li>Despliegue eficiente de modelos de IA usando contenedores y flujos CI/CD.</li>
+      </ul>
+    </div>
+
+    <div class="content-block">
+      <div class="section-title">Certificaciones</div>
+      <table class="cert-table">
+        <tr>
+          <th>Certificación</th>
+          <th>Institución</th>
+          <th>Año</th>
+        </tr>
+        <tr>
+          <td>Business Intelligence Foundation</td>
+          <td>CertiProf</td>
+          <td>2023</td>
+        </tr>
+        <tr>
+          <td>Scrum (Gestión Ágil de Proyectos)</td>
+          <td>ScrumEstudio</td>
+          <td>2024</td>
+        </tr>
+        <tr>
+          <td>Diploma Habilidades Directivas</td>
+          <td>Instituto de Minería UNAM</td>
+          <td>2024</td>
+        </tr>
+        <tr>
+          <td>Trabajo a Distancia (RWPC)</td>
+          <td>CertiProf</td>
+          <td>2023</td>
+        </tr>
+        <tr>
+          <td>Inglés Avanzado</td>
+          <td>Fac. de Contaduría, UNAM</td>
+          <td>2024</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="content-block">
+      <div class="section-title">Educación</div>
+      <strong>Licenciatura en Ingeniería en Sistemas</strong>  
+      - Facultad de Ingeniería, UNAM  <br>
+      <span style="color:#6b7a89">2018 - 2024 | Especialización Full Stack e IA</span><br>
+      <strong>Título Técnico en Sistemas Informáticos</strong>  
+      - CCH UNAM <br>
+      <span style="color:#6b7a89">2015 - 2018</span>
+    </div>
+
+    <div class="content-block">
+      <div class="section-title">Idiomas</div>
+      <div>Español (Nativo)</div>
+      <div class="lang-bar"><span style="width:100%"></span></div>
+      <div>Inglés (Avanzado - técnico y profesional)</div>
+      <div class="lang-bar"><span style="width:85%"></span></div>
+    </div>
+
+    <div class="content-block">
+      <div class="section-title">Otras Competencias</div>
+      <ul>
+        <li>Optimización y refactorización de código en Python para desempeño y eficiencia.</li>
+        <li>Aplicación de metodologías ágiles (Scrum) en equipos multidisciplinarios.</li>
+        <li>Comunicación efectiva de resultados científicos y técnicos para audiencias variadas.</li>
+        <li>Gestión de proyectos, pensamiento crítico y liderazgo.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
