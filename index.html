@@ -14,7 +14,7 @@
       padding: 0;
     }
     .container {
-      max-width: 850px;
+      max-width: 900px;
       margin: 40px auto;
       background: #fff;
       border-radius: 16px;
@@ -110,6 +110,25 @@
       height: 11px;
       background: #5b8def;
     }
+    .project-item {
+      margin-bottom: 20px;
+      padding: 15px;
+      background: #f8f9fd;
+      border-radius: 8px;
+      border-left: 4px solid #5b8def;
+    }
+    .project-title {
+      font-weight: 700;
+      color: #243f77;
+      margin-bottom: 8px;
+      font-size: 1.1em;
+    }
+    .project-tech {
+      font-size: 0.9em;
+      color: #5b8def;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
     @media (max-width: 680px) {
       .container { padding: 20px; }
       .header { flex-direction: column; align-items: flex-start; }
@@ -144,29 +163,48 @@
       <div class="section-title">Competencias Técnicas</div>
       <ul class="skills-list">
         <li>Python (TensorFlow, Keras, Pandas, scikit-learn)</li>
-        <li>Redes neuronales DNN / LSTM / RNN</li>
+        <li>Redes neuronales LSTM / TCN / DNN</li>
         <li>Series temporales & Forecasting</li>
         <li>Minería y limpieza de datos</li>
-        <li>Clasificación y regresión</li>
+        <li>Clasificación y regresión (XGBoost)</li>
+        <li>Prophet, ATR, RSI, EMAs</li>
         <li>Optimización de código y procesos</li>
         <li>Visualización avanzada de datos</li>
         <li>Java (Spring Boot, Maven)</li>
+        <li>C# (.NET, Microservicios)</li>
         <li>Microservicios RESTful</li>
         <li>Despliegue en Docker / CI-CD</li>
         <li>SQL / Firebase / MongoDB</li>
-        <li>Git, Linux, Azure</li>
+        <li>React, Power BI, Git, Linux, Azure</li>
       </ul>
     </div>
 
     <div class="content-block">
-      <div class="section-title">Experiencia Relevante</div>
-      <ul>
-        <li>Modelado y despliegue de <strong>redes neuronales profundas</strong> para detectar patrones y tendencias en grandes volúmenes de datos (finanzas, mercado).</li>
-        <li>Implementación de <strong>modelos predictivos de series temporales</strong> y clasificación automática para toma de decisiones en tiempo real.</li>
-        <li>Minería de datos y automatización de pipelines de integración para proyectos de ciencia de datos.</li>
-        <li>Desarrollo y optimización de <strong>microservicios en Java</strong> para plataformas seguras, modulares y de alta disponibilidad.</li>
-        <li>Despliegue eficiente de modelos de IA usando contenedores y flujos CI/CD.</li>
-      </ul>
+      <div class="section-title">Experiencia de Proyectos</div>
+      
+      <div class="project-item">
+        <div class="project-title">Sistema de Predicción de Criptomonedas (Proyecto Personal)</div>
+        <div class="project-tech">Tecnologías: Python, LSTM/TCN, TensorFlow, Pandas, RSI, EMAs, ATR</div>
+        <strong>Problema:</strong> Anticipar movimientos de precios en criptomonedas (DOGE/USDT) para identificar puntos de entrada con alta expectativa.<br>
+        <strong>Solución:</strong> Desarrollé un sistema completo con redes neuronales LSTM/TCN para predecir retornos de criptomonedas, construyendo pipelines de datos OHLCV, generando features de series de tiempo (EMAs, RSI, volatilidad, mínimos locales) y combinando señales probabilísticas con confirmadores técnicos y gestión de riesgo basada en ATR.<br>
+        <strong>Resultado:</strong> Mejoré significativamente la precisión de entradas frente a estrategias manuales, con mejor profit factor y drawdown más controlado.
+      </div>
+
+      <div class="project-item">
+        <div class="project-title">Predicción de Demanda Hotelera - Fortem Capital</div>
+        <div class="project-tech">Tecnologías: Python, Prophet, XGBoost, C#/.NET, Java/Spring Boot, React, Power BI, SQL, MongoDB</div>
+        <strong>Problema:</strong> Proyectar demanda de vivienda y ocupación hotelera en zonas turísticas para optimizar decisiones de inversión inmobiliaria.<br>
+        <strong>Solución:</strong> Implementé modelos de series de tiempo (Prophet) y XGBoost Regressor para predecir demanda y precios, integrando datos históricos de ventas, ocupación y variables económicas. Desarrollé microservicios en C# y Java con Spring Boot para exponer APIs con resultados y creé dashboards dinámicos en React y Power BI.<br>
+        <strong>Resultado:</strong> Reduje en más del 20% el error de predicción y proporcioné una plataforma dinámica para decisiones de inversión en tiempo real.
+      </div>
+
+      <div class="project-item">
+        <div class="project-title">Clasificación de Calidad de Minerales (Proyecto Académico)</div>
+        <div class="project-tech">Tecnologías: Python, XGBoost Classifier, scikit-learn, Pandas</div>
+        <strong>Problema:</strong> Clasificar calidad del mineral (alta, media, baja) al momento de extracción, ya que los análisis de laboratorio tardaban días en procesarse.<br>
+        <strong>Solución:</strong> Desarrollé un modelo de clasificación con XGBoost utilizando variables como pH, densidad, humedad y ubicación. Realicé preprocesamiento completo: limpieza, normalización y balanceo de clases, evaluando con F1 Score para optimizar precisión.<br>
+        <strong>Resultado:</strong> Logré 85% de precisión en clasificación, reduciendo tiempo de clasificación de días a minutos y mejorando significativamente la eficiencia operativa del proceso minero.
+      </div>
     </div>
 
     <div class="content-block">
